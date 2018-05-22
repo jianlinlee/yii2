@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\user\User */
+/* @var $model backend\models\User */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -14,17 +14,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'pwd')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'status')->textInput() ?>
+    <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'level')->textInput() ?>
 
-    <?= $form->field($model, 'createtime')->textInput() ?>
+    <?= $form->field($model, 'status')->textInput() ?>
 
-    <?= $form->field($model, 'updatetime')->textInput() ?>
+    <?= $form->field($model, 'createtime')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

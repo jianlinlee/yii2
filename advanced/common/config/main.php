@@ -11,7 +11,7 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=personal',
+            'dsn' => 'mysql:host=localhost;dbname=db_edj_cbank',
             'username' => 'root',
             'password' => 'root',
             'charset' => 'utf8',

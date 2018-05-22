@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\user\UserSearch */
+/* @var $model backend\models\UserSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -19,17 +19,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name') ?>
 
-    <?= $form->field($model, 'pwd') ?>
+    <?= $form->field($model, 'password') ?>
 
-    <?= $form->field($model, 'phone') ?>
+    <?= $form->field($model, 'level') ?>
 
     <?= $form->field($model, 'status') ?>
 
-    <?php // echo $form->field($model, 'level') ?>
-
     <?php // echo $form->field($model, 'createtime') ?>
-
-    <?php // echo $form->field($model, 'updatetime') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
