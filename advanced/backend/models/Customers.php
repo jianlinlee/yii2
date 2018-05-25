@@ -48,12 +48,12 @@ class Customers extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'phone' => 'Phone',
-            'package' => 'Package',
-            'creater' => 'Creater',
-            'createtime' => 'Createtime',
-            'bak' => 'Bak',
-            'status' => 'Status',
+            'phone' => '手机号',
+            'package' => '权益包',
+            'creater' => '创建人',
+            'createtime' => '导入时间',
+            'bak' => '备注',
+            'status' => '是否绑定',
         ];
     }
 }

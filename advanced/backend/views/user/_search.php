@@ -19,7 +19,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name') ?>
 
-    <?= $form->field($model, 'password') ?>
+    <?= $form->field($model, 'pwd') ?>
 
     <?= $form->field($model, 'level') ?>
 

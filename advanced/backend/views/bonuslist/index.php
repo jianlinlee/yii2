@@ -2,39 +2,74 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use kartik\datetime\DateTimePicker;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\BonuslistSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Bonuslists';
+$this->title = '权益绑定记录';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bonuslist-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-    <p>
-        <?= Html::a('Create Bonuslist', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+//            ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'cid',
+//            'id',
+//            'cid',
             'type',
             'code',
-            'bindtime',
-            //'usetime',
+//            'pic',
+            [
+                'attribute' => 'bindtime',
+                'filter' => DateTimePicker::widget([
+                    'model' => $searchModel,
+                    'type' => DateTimePicker::TYPE_INPUT,
+                    'attribute' => 'bindtime',
+                    'options' => ['class' => ''],
+                    'pluginOptions' => [
+                        'autoclose' => true,
+                        'format' => 'yyyy-mm-dd',
+                        'minView' => 'month',
+                    ]
+                ]),
+            ],
+            [
+                'attribute' => 'deadline',
+                'filter' => DateTimePicker::widget([
+                    'model' => $searchModel,
+                    'type' => DateTimePicker::TYPE_INPUT,
+                    'attribute' => 'deadline',
+                    'options' => ['class' => ''],
+                    'pluginOptions' => [
+                        'autoclose' => true,
+                        'format' => 'yyyy-mm-dd',
+                        'minView' => 'month',
+                    ]
+                ]),
+            ],
+            [
+                'attribute' => 'usetime',
+                'filter' => DateTimePicker::widget([
+                    'model' => $searchModel,
+                    'type' => DateTimePicker::TYPE_INPUT,
+                    'attribute' => 'usetime',
+                    'options' => ['class' => ''],
+                    'pluginOptions' => [
+                        'autoclose' => true,
+                        'format' => 'yyyy-mm-dd',
+                        'minView' => 'month',
+                    ]
+                ]),
+            ],
             //'lasttime',
             //'status',
 
-            ['class' => 'yii\grid\ActionColumn'],
+//            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 </div>

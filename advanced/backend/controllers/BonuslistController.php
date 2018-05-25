@@ -14,6 +14,14 @@ use yii\filters\VerbFilter;
  */
 class BonuslistController extends Controller
 {
+    public function actions()
+    {
+        $session = Yii::$app->session;
+        if (!isset($session['user']) || empty($session['user'])) {
+            $this->redirect(['site/login']);
+            return;
+        }
+    }
     /**
      * {@inheritdoc}
      */
@@ -36,6 +44,9 @@ class BonuslistController extends Controller
     public function actionIndex()
     {
         $searchModel = new BonuslistSearch();
+        $params = Yii::$app->request->queryParams;
+        $params['BonuslistSearch']['cid'] = $params['cid'];
+        Yii::$app->request->queryParams = $params;
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [

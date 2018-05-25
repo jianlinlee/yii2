@@ -14,6 +14,15 @@ use yii\filters\VerbFilter;
  */
 class CustomersController extends Controller
 {
+    public function actions()
+    {
+        $session = Yii::$app->session;
+        if (!isset($session['user']) || empty($session['user'])) {
+            $this->redirect(['site/login']);
+            return;
+        }
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -123,5 +132,26 @@ class CustomersController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public function actionUploadfile()
+    {
+        return $this->renderpartial('uploadfile');
+    }
+
+    public function actionDoupload()
+    {
+
+    }
+
+    public function actionMultidelete()
+    {
+        $ajaxdata = Yii::$app->request->post()['ids'];
+        $ids = '(' . implode(',', $ajaxdata) . ')';
+        $del = Customers::deleteAll("id in {$ids}");
+        if ($del) {
+            return 1;// 删除成功
+        }
+        return 0;// 删除失败
     }
 }

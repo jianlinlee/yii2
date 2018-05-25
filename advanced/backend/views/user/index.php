@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'name',
-            'password',
+            'pwd',
             'level',
             'status',
             //'createtime',

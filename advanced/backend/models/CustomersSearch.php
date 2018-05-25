@@ -60,13 +60,13 @@ class CustomersSearch extends Customers
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'createtime' => $this->createtime,
             'status' => $this->status,
         ]);
 
         $query->andFilterWhere(['like', 'phone', $this->phone])
             ->andFilterWhere(['like', 'package', $this->package])
             ->andFilterWhere(['like', 'creater', $this->creater])
+            ->andFilterWhere(['like', 'createtime', $this->createtime])
             ->andFilterWhere(['like', 'bak', $this->bak]);
 
         return $dataProvider;

@@ -85,6 +85,31 @@
         ]
     },
     {
+        "name": "bower-asset/bootstrap3-dialog",
+        "version": "v1.35.4",
+        "version_normalized": "1.35.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nakupanda/bootstrap3-dialog.git",
+            "reference": "3dd11d586f78de75356af418907ec6e3b347377c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nakupanda/bootstrap3-dialog/zipball/3dd11d586f78de75356af418907ec6e3b347377c",
+            "reference": "3dd11d586f78de75356af418907ec6e3b347377c",
+            "shasum": null
+        },
+        "require": {
+            "bower-asset/bootstrap": ">=3.1.0",
+            "bower-asset/jquery": ">=1.9.0"
+        },
+        "type": "bower-asset",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
         "name": "bower-asset/inputmask",
         "version": "3.3.11",
         "version_normalized": "3.3.11.0",
@@ -800,6 +825,164 @@
             "stream",
             "uri",
             "url"
+        ]
+    },
+    {
+        "name": "kartik-v/yii2-dialog",
+        "version": "v1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-dialog.git",
+            "reference": "ae6de7328251b084de7f1a66bac1f7c6279c9ad1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-dialog/zipball/ae6de7328251b084de7f1a66bac1f7c6279c9ad1",
+            "reference": "ae6de7328251b084de7f1a66bac1f7c6279c9ad1",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/bootstrap3-dialog": "~1.34",
+            "kartik-v/yii2-krajee-base": "~1.7"
+        },
+        "time": "2017-11-06T16:04:54+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kartik\\dialog\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "An asset bundle for bootstrap3-dialog for Yii 2.0 framework.",
+        "homepage": "https://github.com/kartik-v/yii2-dialog",
+        "keywords": [
+            "alert",
+            "bootstrap",
+            "dialog",
+            "extension",
+            "modal",
+            "yii2"
+        ]
+    },
+    {
+        "name": "kartik-v/yii2-krajee-base",
+        "version": "v1.8.9",
+        "version_normalized": "1.8.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+            "reference": "0cafe6376780cedcd00f52c9d82b172d5851f6b0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/0cafe6376780cedcd00f52c9d82b172d5851f6b0",
+            "reference": "0cafe6376780cedcd00f52c9d82b172d5851f6b0",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2-bootstrap": "@dev"
+        },
+        "time": "2017-09-29T06:18:14+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.8.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kartik\\base\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+        "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+        "keywords": [
+            "base",
+            "extension",
+            "foundation",
+            "krajee",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
+        "name": "kartik-v/yii2-widget-datetimepicker",
+        "version": "v1.4.4",
+        "version_normalized": "1.4.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-widget-datetimepicker.git",
+            "reference": "e843520aca008dc0807aa7ea99bfab2cc03c9a3c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-datetimepicker/zipball/e843520aca008dc0807aa7ea99bfab2cc03c9a3c",
+            "reference": "e843520aca008dc0807aa7ea99bfab2cc03c9a3c",
+            "shasum": ""
+        },
+        "require": {
+            "kartik-v/yii2-krajee-base": "*"
+        },
+        "time": "2017-06-08T05:53:28+00:00",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kartik\\datetime\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "Enhanced Yii2 wrapper for the bootstrap datetimepicker plugin (sub repo split from yii2-widgets)",
+        "homepage": "https://github.com/kartik-v/yii2-widget-datetimepicker",
+        "keywords": [
+            "datetime",
+            "extension",
+            "form",
+            "jquery",
+            "picker",
+            "plugin",
+            "select2",
+            "widget",
+            "yii2"
         ]
     },
     {
@@ -2313,8 +2496,8 @@
     },
     {
         "name": "symfony/browser-kit",
-        "version": "v4.0.9",
-        "version_normalized": "4.0.9.0",
+        "version": "v4.0.10",
+        "version_normalized": "4.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/browser-kit.git",
@@ -2372,17 +2555,17 @@
     },
     {
         "name": "symfony/console",
-        "version": "v4.0.9",
-        "version_normalized": "4.0.9.0",
+        "version": "v4.0.10",
+        "version_normalized": "4.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/console.git",
-            "reference": "3e820bc2c520a87ca209ad8fa961c97f42e0b4ae"
+            "reference": "058f120b8e06ebcd7b211de5ffae07b2db00fbdd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/3e820bc2c520a87ca209ad8fa961c97f42e0b4ae",
-            "reference": "3e820bc2c520a87ca209ad8fa961c97f42e0b4ae",
+            "url": "https://api.github.com/repos/symfony/console/zipball/058f120b8e06ebcd7b211de5ffae07b2db00fbdd",
+            "reference": "058f120b8e06ebcd7b211de5ffae07b2db00fbdd",
             "shasum": ""
         },
         "require": {
@@ -2407,7 +2590,7 @@
             "symfony/lock": "",
             "symfony/process": ""
         },
-        "time": "2018-04-30T01:23:47+00:00",
+        "time": "2018-05-16T09:05:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2442,23 +2625,23 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v4.0.9",
-        "version_normalized": "4.0.9.0",
+        "version": "v4.0.10",
+        "version_normalized": "4.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
-            "reference": "03f965583147957f1ecbad7ea1c9d6fd5e525ec2"
+            "reference": "0383a1a4eb1ffcac28719975d3e01bfa14be8ab3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/03f965583147957f1ecbad7ea1c9d6fd5e525ec2",
-            "reference": "03f965583147957f1ecbad7ea1c9d6fd5e525ec2",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/0383a1a4eb1ffcac28719975d3e01bfa14be8ab3",
+            "reference": "0383a1a4eb1ffcac28719975d3e01bfa14be8ab3",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3"
         },
-        "time": "2018-03-19T22:35:49+00:00",
+        "time": "2018-05-11T15:58:37+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2497,21 +2680,22 @@
     },
     {
         "name": "symfony/dom-crawler",
-        "version": "v4.0.9",
-        "version_normalized": "4.0.9.0",
+        "version": "v4.0.10",
+        "version_normalized": "4.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/dom-crawler.git",
-            "reference": "d6c04c7532535b5e0b63db45b543cd60818e0fbc"
+            "reference": "cf13fe774cabf4d32e8e234ec6efe7821e8b6ec1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/d6c04c7532535b5e0b63db45b543cd60818e0fbc",
-            "reference": "d6c04c7532535b5e0b63db45b543cd60818e0fbc",
+            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/cf13fe774cabf4d32e8e234ec6efe7821e8b6ec1",
+            "reference": "cf13fe774cabf4d32e8e234ec6efe7821e8b6ec1",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3",
+            "symfony/polyfill-ctype": "~1.8",
             "symfony/polyfill-mbstring": "~1.0"
         },
         "require-dev": {
@@ -2520,7 +2704,7 @@
         "suggest": {
             "symfony/css-selector": ""
         },
-        "time": "2018-03-19T22:35:49+00:00",
+        "time": "2018-05-01T23:00:51+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2555,8 +2739,8 @@
     },
     {
         "name": "symfony/event-dispatcher",
-        "version": "v4.0.9",
-        "version_normalized": "4.0.9.0",
+        "version": "v4.0.10",
+        "version_normalized": "4.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/event-dispatcher.git",
@@ -2620,23 +2804,23 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v4.0.9",
-        "version_normalized": "4.0.9.0",
+        "version": "v4.0.10",
+        "version_normalized": "4.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
-            "reference": "ca27c02b7a3fef4828c998c2ff9ba7aae1641c49"
+            "reference": "8c633f5a815903a1fe6e3fc135f207267a8a79af"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/finder/zipball/ca27c02b7a3fef4828c998c2ff9ba7aae1641c49",
-            "reference": "ca27c02b7a3fef4828c998c2ff9ba7aae1641c49",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/8c633f5a815903a1fe6e3fc135f207267a8a79af",
+            "reference": "8c633f5a815903a1fe6e3fc135f207267a8a79af",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3"
         },
-        "time": "2018-04-04T05:10:37+00:00",
+        "time": "2018-05-16T09:05:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2668,6 +2852,63 @@
         ],
         "description": "Symfony Finder Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/polyfill-ctype",
+        "version": "v1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-ctype.git",
+            "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+            "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2018-04-30T19:57:29+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Ctype\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            },
+            {
+                "name": "Gert de Pagter",
+                "email": "BackEndTea@gmail.com"
+            }
+        ],
+        "description": "Symfony polyfill for ctype functions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "ctype",
+            "polyfill",
+            "portable"
+        ]
     },
     {
         "name": "symfony/polyfill-mbstring",
@@ -2732,21 +2973,22 @@
     },
     {
         "name": "symfony/yaml",
-        "version": "v4.0.9",
-        "version_normalized": "4.0.9.0",
+        "version": "v4.0.10",
+        "version_normalized": "4.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
-            "reference": "275ad099e4cbe612a2acbca14a16dd1c5311324d"
+            "reference": "048b1be5fb96e73ff1d065f5e7e23f84415ac907"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/yaml/zipball/275ad099e4cbe612a2acbca14a16dd1c5311324d",
-            "reference": "275ad099e4cbe612a2acbca14a16dd1c5311324d",
+            "url": "https://api.github.com/repos/symfony/yaml/zipball/048b1be5fb96e73ff1d065f5e7e23f84415ac907",
+            "reference": "048b1be5fb96e73ff1d065f5e7e23f84415ac907",
             "shasum": ""
         },
         "require": {
-            "php": "^7.1.3"
+            "php": "^7.1.3",
+            "symfony/polyfill-ctype": "~1.8"
         },
         "conflict": {
             "symfony/console": "<3.4"
@@ -2757,7 +2999,7 @@
         "suggest": {
             "symfony/console": "For validating YAML files using the lint command"
         },
-        "time": "2018-04-08T08:49:08+00:00",
+        "time": "2018-05-07T07:12:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

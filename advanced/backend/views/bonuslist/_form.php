@@ -18,7 +18,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'code')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'pic')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'bindtime')->textInput() ?>
+
+    <?= $form->field($model, 'deadline')->textInput() ?>
 
     <?= $form->field($model, 'usetime')->textInput() ?>
 

@@ -23,7 +23,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'code') ?>
 
-    <?= $form->field($model, 'bindtime') ?>
+    <?= $form->field($model, 'pic') ?>
+
+    <?php // echo $form->field($model, 'bindtime') ?>
+
+    <?php // echo $form->field($model, 'deadline') ?>
 
     <?php // echo $form->field($model, 'usetime') ?>
 

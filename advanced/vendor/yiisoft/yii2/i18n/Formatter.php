@@ -385,7 +385,7 @@ class Formatter extends Component
             $this->booleanFormat = [Yii::t('yii', 'No', [], $this->locale), Yii::t('yii', 'Yes', [], $this->locale)];
         }
         if ($this->nullDisplay === null) {
-            $this->nullDisplay = '<span class="not-set">' . Yii::t('yii', '(not set)', [], $this->locale) . '</span>';
+            $this->nullDisplay = '<span class="not-set">' . Yii::t('yii', '', [], $this->locale) . '</span>';
         }
         $this->_intlLoaded = extension_loaded('intl');
         if (!$this->_intlLoaded) {

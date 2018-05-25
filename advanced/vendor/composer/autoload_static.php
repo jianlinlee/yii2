@@ -4,11 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite0cfd40a8e72126156c707fcedad76b8
+class ComposerStaticInitccc764269b18c7de591ee63ac16298c7
 {
     public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
@@ -30,6 +31,12 @@ class ComposerStaticInite0cfd40a8e72126156c707fcedad76b8
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'k' => 
+        array (
+            'kartik\\dialog\\' => 14,
+            'kartik\\datetime\\' => 16,
+            'kartik\\base\\' => 12,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -41,6 +48,7 @@ class ComposerStaticInite0cfd40a8e72126156c707fcedad76b8
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
@@ -113,6 +121,18 @@ class ComposerStaticInite0cfd40a8e72126156c707fcedad76b8
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
+        'kartik\\dialog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-dialog',
+        ),
+        'kartik\\datetime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-datetimepicker',
+        ),
+        'kartik\\base\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-krajee-base',
+        ),
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
@@ -124,6 +144,10 @@ class ComposerStaticInite0cfd40a8e72126156c707fcedad76b8
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
         'Symfony\\Component\\Yaml\\' => 
         array (
@@ -766,10 +790,10 @@ class ComposerStaticInite0cfd40a8e72126156c707fcedad76b8
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite0cfd40a8e72126156c707fcedad76b8::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite0cfd40a8e72126156c707fcedad76b8::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite0cfd40a8e72126156c707fcedad76b8::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInite0cfd40a8e72126156c707fcedad76b8::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitccc764269b18c7de591ee63ac16298c7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitccc764269b18c7de591ee63ac16298c7::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitccc764269b18c7de591ee63ac16298c7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitccc764269b18c7de591ee63ac16298c7::$classMap;
 
         }, null, ClassLoader::class);
     }

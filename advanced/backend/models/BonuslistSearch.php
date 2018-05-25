@@ -19,7 +19,7 @@ class BonuslistSearch extends Bonuslist
     {
         return [
             [['id', 'cid', 'status'], 'integer'],
-            [['type', 'code', 'bindtime', 'usetime', 'lasttime'], 'safe'],
+            [['type', 'code', 'pic', 'bindtime', 'deadline', 'usetime', 'lasttime'], 'safe'],
         ];
     }
 
@@ -62,13 +62,15 @@ class BonuslistSearch extends Bonuslist
             'id' => $this->id,
             'cid' => $this->cid,
             'bindtime' => $this->bindtime,
+            'deadline' => $this->deadline,
             'usetime' => $this->usetime,
             'lasttime' => $this->lasttime,
             'status' => $this->status,
         ]);
 
         $query->andFilterWhere(['like', 'type', $this->type])
-            ->andFilterWhere(['like', 'code', $this->code]);
+            ->andFilterWhere(['like', 'code', $this->code])
+            ->andFilterWhere(['like', 'pic', $this->pic]);
 
         return $dataProvider;
     }
