@@ -1,20 +1,25 @@
-2018-05-25 18:35:28 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][error][Error] Error: Class 'Url' not found in D:\Edj\proj_cbank\backend\views\customers\uploadfile.php:43
+2018-06-01 18:11:01 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][error][yii\redis\Connection] Failed to open redis DB connection (localhost:6379, database=0): 10061 - 由于目标计算机积极拒绝，无法连接。
+
+    in D:\Edj\proj_cbank\backend\controllers\CustomersController.php:54
+2018-06-01 18:11:01 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][error][yii\db\Exception] yii\db\Exception: Failed to open redis DB connection (localhost:6379, database=0): 10061 - 由于目标计算机积极拒绝，无法连接。
+ in D:\Edj\proj_cbank\vendor\yiisoft\yii2-redis\src\Connection.php:565
 Stack trace:
-#0 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(336): require()
-#1 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Edj\\proj_cba...', Array)
-#2 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Edj\\proj_cba...', Array, Object(backend\controllers\CustomersController))
-#3 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Controller.php(415): yii\base\View->render('uploadfile', Array, Object(backend\controllers\CustomersController))
-#4 D:\Edj\proj_cbank\backend\controllers\CustomersController.php(139): yii\base\Controller->renderPartial('uploadfile')
-#5 [internal function]: backend\controllers\CustomersController->actionUploadfile()
-#6 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
-#7 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
-#8 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('uploadfile', Array)
-#9 D:\Edj\proj_cbank\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('customers/uploa...', Array)
-#10 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#11 D:\Edj\proj_cbank\backend\web\index.php(17): yii\base\Application->run()
-#12 {main}
-2018-05-25 18:35:28 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][info][application] $_GET = [
-    'r' => 'customers/uploadfile'
+#0 D:\Edj\proj_cbank\vendor\yiisoft\yii2-redis\src\Connection.php(665): yii\redis\Connection->open()
+#1 D:\Edj\proj_cbank\vendor\yiisoft\yii2-redis\src\Connection.php(630): yii\redis\Connection->executeCommand('GET', Array)
+#2 D:\Edj\proj_cbank\backend\controllers\CustomersController.php(54): yii\redis\Connection->__call('get', Array)
+#3 [internal function]: backend\controllers\CustomersController->actionIndex()
+#4 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 D:\Edj\proj_cbank\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('customers/index', Array)
+#8 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\Edj\proj_cbank\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+由于目标计算机积极拒绝，无法连接。
+
+2018-06-01 18:10:59 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][info][application] $_GET = [
+    'r' => 'customers/index'
 ]
 
 $_POST = []
@@ -78,254 +83,32 @@ $_SERVER = [
     'HTTP_COOKIE' => 'advanced-backend=32j1rusnoj48nljebit40akmoj; _csrf-backend=6ca3826afa73763b87874746cea7ce334388114e26c68a692f7c5b302bee9d53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229kTT1LXicOIiewBZIS2XDvNEFENdfNdD%22%3B%7D'
     'HTTP_ACCEPT_LANGUAGE' => 'zh,zh-CN;q=0.9,en;q=0.8'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_REFERER' => 'http://admin.cbank.local/index.php?r=customers%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
-    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
-    'HTTP_X_CSRF_TOKEN' => 'v_kt1bCMaz55B43a7Cp_4wvGG9_fKT6LjZ8eg0VjZluGknmBgcAzVxpIxLOJXT25QpUph5tfcM7L2lDnIy0CHw=='
-    'HTTP_ACCEPT' => '*/*'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_HOST' => 'admin.cbank.local'
     'REDIRECT_STATUS' => '200'
     'SERVER_NAME' => 'admin.cbank.local'
     'SERVER_PORT' => '80'
     'SERVER_ADDR' => '127.0.0.1'
-    'REMOTE_PORT' => '52078'
+    'REMOTE_PORT' => '61636'
     'REMOTE_ADDR' => '127.0.0.1'
     'SERVER_SOFTWARE' => 'nginx/1.11.5'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'DOCUMENT_ROOT' => 'D:\\Edj\\proj_cbank\\backend\\web'
     'DOCUMENT_URI' => '/index.php'
-    'REQUEST_URI' => '/index.php?r=customers%2Fuploadfile'
+    'REQUEST_URI' => '/index.php?r=customers%2Findex'
     'SCRIPT_NAME' => '/index.php'
     'CONTENT_LENGTH' => ''
     'CONTENT_TYPE' => ''
     'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => 'r=customers%2Fuploadfile'
+    'QUERY_STRING' => 'r=customers%2Findex'
     'SCRIPT_FILENAME' => 'D:\\Edj\\proj_cbank\\backend\\web/index.php'
     'FCGI_ROLE' => 'RESPONDER'
     'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1527244528.603
-    'REQUEST_TIME' => 1527244528
-]
-2018-05-25 18:35:50 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][error][Error] Error: Class 'Url' not found in D:\Edj\proj_cbank\backend\views\customers\uploadfile.php:43
-Stack trace:
-#0 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(336): require()
-#1 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Edj\\proj_cba...', Array)
-#2 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Edj\\proj_cba...', Array, Object(backend\controllers\CustomersController))
-#3 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Controller.php(415): yii\base\View->render('uploadfile', Array, Object(backend\controllers\CustomersController))
-#4 D:\Edj\proj_cbank\backend\controllers\CustomersController.php(139): yii\base\Controller->renderPartial('uploadfile')
-#5 [internal function]: backend\controllers\CustomersController->actionUploadfile()
-#6 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
-#7 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
-#8 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('uploadfile', Array)
-#9 D:\Edj\proj_cbank\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('customers/uploa...', Array)
-#10 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#11 D:\Edj\proj_cbank\backend\web\index.php(17): yii\base\Application->run()
-#12 {main}
-2018-05-25 18:35:50 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][info][application] $_GET = [
-    'r' => 'customers/uploadfile'
-]
-
-$_POST = []
-
-$_FILES = []
-
-$_COOKIE = [
-    'advanced-backend' => '32j1rusnoj48nljebit40akmoj'
-    '_csrf-backend' => '6ca3826afa73763b87874746cea7ce334388114e26c68a692f7c5b302bee9d53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9kTT1LXicOIiewBZIS2XDvNEFENdfNdD\";}'
-]
-
-$_SESSION = [
-    '__flash' => []
-    'user' => 'admin'
-]
-
-$_SERVER = [
-    'ALLUSERSPROFILE' => 'C:\\ProgramData'
-    'APPDATA' => 'C:\\Users\\lijianlin\\AppData\\Roaming'
-    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
-    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
-    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
-    'COMPUTERNAME' => 'LIJIANLIN-C'
-    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
-    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
-    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
-    'FP_NO_HOST_CHECK' => 'NO'
-    'HOMEDRIVE' => 'C:'
-    'HOMEPATH' => '\\Users\\lijianlin'
-    'LDMS_LOCAL_DIR' => 'C:\\Program Files (x86)\\LANDesk\\LDClient\\Data'
-    'LOCALAPPDATA' => 'C:\\Users\\lijianlin\\AppData\\Local'
-    'LOGONSERVER' => '\\\\AD2'
-    'NUMBER_OF_PROCESSORS' => '8'
-    'OneDrive' => 'C:\\Users\\lijianlin\\OneDrive'
-    'OS' => 'Windows_NT'
-    'Path' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\App\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\App\\PHPStudy\\PHPTutorial\\php\\php-7.2.1-nts;C:\\ProgramData\\ComposerSetup\\bin;D:\\App\\SSH;C:\\Users\\lijianlin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lijianlin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\lijianlin\\AppData\\Local\\GitHubDesktop\\bin'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'PROCESSOR_ARCHITECTURE' => 'x86'
-    'PROCESSOR_ARCHITEW6432' => 'AMD64'
-    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
-    'PROCESSOR_LEVEL' => '6'
-    'PROCESSOR_REVISION' => '3c03'
-    'ProgramData' => 'C:\\ProgramData'
-    'ProgramFiles' => 'C:\\Program Files (x86)'
-    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
-    'ProgramW6432' => 'C:\\Program Files'
-    'PROMPT' => '$P$G'
-    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
-    'PUBLIC' => 'C:\\Users\\Public'
-    'SystemDrive' => 'C:'
-    'SystemRoot' => 'C:\\WINDOWS'
-    'TEMP' => 'C:\\Users\\LIJIAN~1\\AppData\\Local\\Temp'
-    'TMP' => 'C:\\Users\\LIJIAN~1\\AppData\\Local\\Temp'
-    'USERDNSDOMAIN' => 'EDAIJIA-INC.CN'
-    'USERDOMAIN' => 'EDAIJIA-INC'
-    'USERDOMAIN_ROAMINGPROFILE' => 'EDAIJIA-INC'
-    'USERNAME' => 'lijianlin'
-    'USERPROFILE' => 'C:\\Users\\lijianlin'
-    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
-    'windir' => 'C:\\WINDOWS'
-    'HTTP_COOKIE' => 'advanced-backend=32j1rusnoj48nljebit40akmoj; _csrf-backend=6ca3826afa73763b87874746cea7ce334388114e26c68a692f7c5b302bee9d53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229kTT1LXicOIiewBZIS2XDvNEFENdfNdD%22%3B%7D'
-    'HTTP_ACCEPT_LANGUAGE' => 'zh,zh-CN;q=0.9,en;q=0.8'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_REFERER' => 'http://admin.cbank.local/index.php?r=customers%2Findex'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
-    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
-    'HTTP_X_CSRF_TOKEN' => '6R0yfiJ077wfXhzsreI2sBuiRNM_IT8adQLLlCkcZYXQdmYqEzi31XwRVYXIlXTqUvF2i3tXcV8zR4XwT1IBwQ=='
-    'HTTP_ACCEPT' => '*/*'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_HOST' => 'admin.cbank.local'
-    'REDIRECT_STATUS' => '200'
-    'SERVER_NAME' => 'admin.cbank.local'
-    'SERVER_PORT' => '80'
-    'SERVER_ADDR' => '127.0.0.1'
-    'REMOTE_PORT' => '52078'
-    'REMOTE_ADDR' => '127.0.0.1'
-    'SERVER_SOFTWARE' => 'nginx/1.11.5'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'DOCUMENT_ROOT' => 'D:\\Edj\\proj_cbank\\backend\\web'
-    'DOCUMENT_URI' => '/index.php'
-    'REQUEST_URI' => '/index.php?r=customers%2Fuploadfile'
-    'SCRIPT_NAME' => '/index.php'
-    'CONTENT_LENGTH' => ''
-    'CONTENT_TYPE' => ''
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => 'r=customers%2Fuploadfile'
-    'SCRIPT_FILENAME' => 'D:\\Edj\\proj_cbank\\backend\\web/index.php'
-    'FCGI_ROLE' => 'RESPONDER'
-    'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1527244550.3346
-    'REQUEST_TIME' => 1527244550
-]
-2018-05-25 20:14:44 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: delurl in D:\Edj\proj_cbank\backend\views\customers\uploadfile.php:54
-Stack trace:
-#0 D:\Edj\proj_cbank\backend\views\customers\uploadfile.php(54): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Edj\\proj_cba...', 54, Array)
-#1 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Edj\\proj_cba...')
-#2 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Edj\\proj_cba...', Array)
-#3 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\Edj\\proj_cba...', Array, Object(backend\controllers\CustomersController))
-#4 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Controller.php(415): yii\base\View->render('uploadfile', Array, Object(backend\controllers\CustomersController))
-#5 D:\Edj\proj_cbank\backend\controllers\CustomersController.php(139): yii\base\Controller->renderPartial('uploadfile')
-#6 [internal function]: backend\controllers\CustomersController->actionUploadfile()
-#7 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
-#8 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
-#9 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('uploadfile', Array)
-#10 D:\Edj\proj_cbank\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('customers/uploa...', Array)
-#11 D:\Edj\proj_cbank\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#12 D:\Edj\proj_cbank\backend\web\index.php(17): yii\base\Application->run()
-#13 {main}
-2018-05-25 20:14:44 [127.0.0.1][-][32j1rusnoj48nljebit40akmoj][info][application] $_GET = [
-    'r' => 'customers/uploadfile'
-]
-
-$_POST = []
-
-$_FILES = []
-
-$_COOKIE = [
-    'advanced-backend' => '32j1rusnoj48nljebit40akmoj'
-    '_csrf-backend' => '6ca3826afa73763b87874746cea7ce334388114e26c68a692f7c5b302bee9d53a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9kTT1LXicOIiewBZIS2XDvNEFENdfNdD\";}'
-]
-
-$_SESSION = [
-    '__flash' => []
-    'user' => 'admin'
-]
-
-$_SERVER = [
-    'ALLUSERSPROFILE' => 'C:\\ProgramData'
-    'APPDATA' => 'C:\\Users\\lijianlin\\AppData\\Roaming'
-    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
-    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
-    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
-    'COMPUTERNAME' => 'LIJIANLIN-C'
-    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
-    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
-    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
-    'FP_NO_HOST_CHECK' => 'NO'
-    'HOMEDRIVE' => 'C:'
-    'HOMEPATH' => '\\Users\\lijianlin'
-    'LDMS_LOCAL_DIR' => 'C:\\Program Files (x86)\\LANDesk\\LDClient\\Data'
-    'LOCALAPPDATA' => 'C:\\Users\\lijianlin\\AppData\\Local'
-    'LOGONSERVER' => '\\\\AD2'
-    'NUMBER_OF_PROCESSORS' => '8'
-    'OneDrive' => 'C:\\Users\\lijianlin\\OneDrive'
-    'OS' => 'Windows_NT'
-    'Path' => 'C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\App\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\App\\PHPStudy\\PHPTutorial\\php\\php-7.2.1-nts;C:\\ProgramData\\ComposerSetup\\bin;D:\\App\\SSH;C:\\Users\\lijianlin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lijianlin\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\lijianlin\\AppData\\Local\\GitHubDesktop\\bin'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'PROCESSOR_ARCHITECTURE' => 'x86'
-    'PROCESSOR_ARCHITEW6432' => 'AMD64'
-    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
-    'PROCESSOR_LEVEL' => '6'
-    'PROCESSOR_REVISION' => '3c03'
-    'ProgramData' => 'C:\\ProgramData'
-    'ProgramFiles' => 'C:\\Program Files (x86)'
-    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
-    'ProgramW6432' => 'C:\\Program Files'
-    'PROMPT' => '$P$G'
-    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
-    'PUBLIC' => 'C:\\Users\\Public'
-    'SystemDrive' => 'C:'
-    'SystemRoot' => 'C:\\WINDOWS'
-    'TEMP' => 'C:\\Users\\LIJIAN~1\\AppData\\Local\\Temp'
-    'TMP' => 'C:\\Users\\LIJIAN~1\\AppData\\Local\\Temp'
-    'USERDNSDOMAIN' => 'EDAIJIA-INC.CN'
-    'USERDOMAIN' => 'EDAIJIA-INC'
-    'USERDOMAIN_ROAMINGPROFILE' => 'EDAIJIA-INC'
-    'USERNAME' => 'lijianlin'
-    'USERPROFILE' => 'C:\\Users\\lijianlin'
-    'WEBKIT_IGNORE_SSL_ERRORS' => '1'
-    'windir' => 'C:\\WINDOWS'
-    'HTTP_COOKIE' => 'advanced-backend=32j1rusnoj48nljebit40akmoj; _csrf-backend=6ca3826afa73763b87874746cea7ce334388114e26c68a692f7c5b302bee9d53a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229kTT1LXicOIiewBZIS2XDvNEFENdfNdD%22%3B%7D'
-    'HTTP_ACCEPT_LANGUAGE' => 'zh,zh-CN;q=0.9,en;q=0.8'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_REFERER' => 'http://admin.cbank.local/index.php?r=customers%2Findex'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
-    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
-    'HTTP_X_CSRF_TOKEN' => 'SJsSgzvfhvsotyEBPfegQABiIbZVMnkz446gP73LuP1x8EbXCpPekkv4aGhYgOIaSTET7hFEN3aly-5b24XcuQ=='
-    'HTTP_ACCEPT' => '*/*'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_HOST' => 'admin.cbank.local'
-    'REDIRECT_STATUS' => '200'
-    'SERVER_NAME' => 'admin.cbank.local'
-    'SERVER_PORT' => '80'
-    'SERVER_ADDR' => '127.0.0.1'
-    'REMOTE_PORT' => '61687'
-    'REMOTE_ADDR' => '127.0.0.1'
-    'SERVER_SOFTWARE' => 'nginx/1.11.5'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'DOCUMENT_ROOT' => 'D:\\Edj\\proj_cbank\\backend\\web'
-    'DOCUMENT_URI' => '/index.php'
-    'REQUEST_URI' => '/index.php?r=customers%2Fuploadfile'
-    'SCRIPT_NAME' => '/index.php'
-    'CONTENT_LENGTH' => ''
-    'CONTENT_TYPE' => ''
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => 'r=customers%2Fuploadfile'
-    'SCRIPT_FILENAME' => 'D:\\Edj\\proj_cbank\\backend\\web/index.php'
-    'FCGI_ROLE' => 'RESPONDER'
-    'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1527250484.4315
-    'REQUEST_TIME' => 1527250484
+    'REQUEST_TIME_FLOAT' => 1527847859.2435
+    'REQUEST_TIME' => 1527847859
 ]

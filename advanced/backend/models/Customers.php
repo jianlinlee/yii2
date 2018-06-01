@@ -56,4 +56,12 @@ class Customers extends \yii\db\ActiveRecord
             'status' => '是否绑定',
         ];
     }
+
+    public function loadUploadCustomers($params) {
+        return Yii::$app->db->createCommand()->batchInsert(self::tableName(),['phone','package','creater','createtime','bak','status'],$params)->execute();
+    }
+
+    public function searchExistPhone($phones) {
+        return (new \yii\db\Query())->select(['phone'])->from(self::tableName())->where(['in','phone',$phones])->all();
+    }
 }

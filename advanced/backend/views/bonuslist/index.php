@@ -20,10 +20,25 @@ $this->params['breadcrumbs'][] = $this->title;
 //            ['class' => 'yii\grid\SerialColumn'],
 
 //            'id',
-//            'cid',
-            'type',
+            [
+                'attribute' => 'type',
+                'value' => function ($searchModel) {
+                    $type = [
+                        '1' => '代驾',
+                        '2' => '洗车',
+                        '3' => '打蜡',
+                        '4' => '空调清洗',
+                    ];
+                    return $type[$searchModel->type];
+                },
+                'filter' => [
+                    '1' => '代驾',
+                    '2' => '洗车',
+                    '3' => '打蜡',
+                    '4' => '空调清洗',
+                ]
+            ],
             'code',
-//            'pic',
             [
                 'attribute' => 'bindtime',
                 'filter' => DateTimePicker::widget([

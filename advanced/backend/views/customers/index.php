@@ -32,14 +32,13 @@ $this->params['breadcrumbs'][] = $this->title;
     Modal::begin([
         'id' => 'create-modal',
         'header' => '<h4 class="modal-title" style="color:white;">白名单数据导入</h4>',
-        'footer' => '<a href="#" id="doupload" class="btn btn-primary">确定</a><a href="#" class="btn btn-primary" data-dismiss="modal">关闭</a>',
+//        'footer' => '<input type="submit" value="上传" class="btn btn-primary"><a href="#" class="btn btn-primary" id="doupload" data-dismiss="modal">lll</a><a href="#" class="btn btn-primary" data-dismiss="modal">关闭</a>',
         'options'=>[
             'data-backdrop'=>'static',//点击空白处不关闭弹窗
             'data-keyboard'=>false,
         ],
     ]);
     $upurl = Url::toRoute('uploadfile');
-    $doupurl = Url::toRoute('doupload');
     $js = <<<JS
         $(".modal-header").css('backgroundColor','#2e6da4');
         $(".close").css('color','black');
@@ -48,30 +47,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 $('.modal-body').html(data);
             }
         );
-        $("#doupload").click(function() {
-            // krajeeDialog.alert(1);
-            var package = $("#package option:selected").val();
-            var bak = $("#bak").text();
-            var file = $('input[name="file_data"]').prop('files');
-            console.log(package);
-            console.log(bak);
-            console.log(file);
-            
-//            $.ajax({
-//                type: 'POST',
-//                url: '{$doupurl}',
-//                data: {'ids':list},
-//                dataType: 'json',
-//                success: function (ret) {
-//                    if (ret) {
-//                        krajeeDialog.alert('删除完成！');
-//                        window.location.reload();
-//                    } else {
-//                        krajeeDialog.alert('删除失败！请重试。');
-//                    }
-//                }
-//            });
-        });
 JS;
     $this->registerJs($js);
     Modal::end();

@@ -34,8 +34,8 @@ class Bonuslist extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cid', 'type', 'bindtime', 'usetime', 'lasttime'], 'required'],
-            [['cid', 'status'], 'integer'],
+            [['type', 'bindtime', 'usetime', 'lasttime'], 'required'],
+            [[ 'status'], 'integer'],
             [['bindtime', 'deadline', 'usetime', 'lasttime'], 'safe'],
             [['type'], 'string', 'max' => 20],
             [['code'], 'string', 'max' => 30],
@@ -50,7 +50,6 @@ class Bonuslist extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'cid' => 'Cid',
             'type' => '类型',
             'code' => '优惠券码',
             'pic' => 'Pic',

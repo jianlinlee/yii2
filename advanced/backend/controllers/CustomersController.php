@@ -2,18 +2,22 @@
 
 namespace backend\controllers;
 
+use frontend\models\Bonuslist;
 use Yii;
 use backend\models\Customers;
 use backend\models\CustomersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\rule\Rule;
 
 /**
  * CustomersController implements the CRUD actions for Customers model.
  */
 class CustomersController extends Controller
 {
+    public $enableCsrfValidation = false;
+
     public function actions()
     {
         $session = Yii::$app->session;
@@ -141,7 +145,56 @@ class CustomersController extends Controller
 
     public function actionDoupload()
     {
+        echo '<pre/>';
+        $post = Yii::$app->request->post();
+        if ($_FILES['file_data']['error'] <= 0) {
+            // 上传文件到服务器
+            $filename = "D:\\Edj\\proj_cbank\\upload\\tmp\\" . md5(time()) . $_FILES['file_data']['name'];
+            move_uploaded_file($_FILES['file_data']['tmp_name'], $filename);
+        } else {
+            $this->redirect('customers/index');
+            return;
+        }
+        if (file_exists($filename)) {
+            $phonelist = \moonland\phpexcel\Excel::import($filename, [
+                'setFirstRecordAsKeys' => false,
+                'setIndexSheetByName' => true,
+                'getOnlySheet' => 'Sheet1',
+            ]);
+            if (!empty($phonelist)) {
+                // 获取手机号
+                $rule = new Rule();
+                $now = date('Y-m-d H:i:s',time());
+//                var_dump($phonelist);
+                foreach ($phonelist as $key => $item) {
+                    if ($rule->checkPhone($item['A'])) {
+                        $params[(string)$item['A']]['phone'] = (string)$item['A'];
+                        $params[(string)$item['A']]['package'] = $post['package'];
+                        $params[(string)$item['A']]['creater'] = Yii::$app->session->get('user');
+                        $params[(string)$item['A']]['createtime'] = $now;
+                        $params[(string)$item['A']]['bak'] = $post['bak'];
+                        $params[(string)$item['A']]['status'] = '1';
+                    }
+                }
+                if (!empty($params)) {
+                    $customers = new Customers();
+                    // 排除已入库的手机号
+                    $phones = array_keys($params);
+                    $existphones = $customers->searchExistPhone($phones);
+                    if (!empty($existphones)) {
+                        foreach ($existphones as $item) {
+                            unset($params[$item['phone']]);
+                        }
+                    }
+                    // 批量插入手机号
+                    if (!empty($params)) {
+                        $customers->loadUploadCustomers($params);
+                    }
+                    $this->redirect('customers/index');
+                }
+            }
 
+        }
     }
 
     public function actionMultidelete()

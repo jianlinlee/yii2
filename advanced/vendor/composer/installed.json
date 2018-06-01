@@ -90,7 +90,7 @@
         "version_normalized": "1.35.4.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/nakupanda/bootstrap3-dialog.git",
+            "url": "git@github.com:nakupanda/bootstrap3-dialog.git",
             "reference": "3dd11d586f78de75356af418907ec6e3b347377c"
         },
         "dist": {
@@ -281,27 +281,27 @@
     },
     {
         "name": "codeception/base",
-        "version": "2.4.1",
-        "version_normalized": "2.4.1.0",
+        "version": "2.4.2",
+        "version_normalized": "2.4.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Codeception/base.git",
-            "reference": "fb07b713f2a97cdf0c5c81c93fa26a0785eb44a6"
+            "reference": "b41e442cbf8b7a269b74492a12fb1cf2bd06c3b8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/base/zipball/fb07b713f2a97cdf0c5c81c93fa26a0785eb44a6",
-            "reference": "fb07b713f2a97cdf0c5c81c93fa26a0785eb44a6",
+            "url": "https://files.phpcomposer.com/files/Codeception/base/b41e442cbf8b7a269b74492a12fb1cf2bd06c3b8.zip",
+            "reference": "b41e442cbf8b7a269b74492a12fb1cf2bd06c3b8",
             "shasum": ""
         },
         "require": {
             "behat/gherkin": "^4.4.0",
             "codeception/phpunit-wrapper": "^6.0.9|^7.0.6",
-            "codeception/stub": "^1.0",
+            "codeception/stub": "^2.0",
             "ext-json": "*",
             "ext-mbstring": "*",
             "guzzlehttp/psr7": "~1.0",
-            "php": ">=5.4.0 <8.0",
+            "php": ">=5.6.0 <8.0",
             "symfony/browser-kit": ">=2.7 <5.0",
             "symfony/console": ">=2.7 <5.0",
             "symfony/css-selector": ">=2.7 <5.0",
@@ -334,7 +334,7 @@
             "stecman/symfony-console-completion": "For BASH autocompletion",
             "symfony/phpunit-bridge": "For phpunit-bridge support"
         },
-        "time": "2018-03-31T22:36:34+00:00",
+        "time": "2018-05-26T22:24:57+00:00",
         "bin": [
             "codecept"
         ],
@@ -372,17 +372,17 @@
     },
     {
         "name": "codeception/phpunit-wrapper",
-        "version": "7.1.2",
-        "version_normalized": "7.1.2.0",
+        "version": "7.1.3",
+        "version_normalized": "7.1.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Codeception/phpunit-wrapper.git",
-            "reference": "374dd623668a0028e29c95b362e20d03f8c4e65b"
+            "reference": "6a6244340e942a8d88cd9579d23c80b0ba10d46d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/374dd623668a0028e29c95b362e20d03f8c4e65b",
-            "reference": "374dd623668a0028e29c95b362e20d03f8c4e65b",
+            "url": "https://files.phpcomposer.com/files/Codeception/phpunit-wrapper/6a6244340e942a8d88cd9579d23c80b0ba10d46d.zip",
+            "reference": "6a6244340e942a8d88cd9579d23c80b0ba10d46d",
             "shasum": ""
         },
         "require": {
@@ -395,7 +395,7 @@
             "codeception/specify": "*",
             "vlucas/phpdotenv": "^2.4"
         },
-        "time": "2018-05-17T08:30:48+00:00",
+        "time": "2018-05-22T09:20:59+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -417,17 +417,17 @@
     },
     {
         "name": "codeception/stub",
-        "version": "1.0.4",
-        "version_normalized": "1.0.4.0",
+        "version": "2.0.1",
+        "version_normalized": "2.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Codeception/Stub.git",
-            "reference": "681b62348837a5ef07d10d8a226f5bc358cc8805"
+            "reference": "b2eff325d8ff0b824ff659048be7be4e5767d7d0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/Stub/zipball/681b62348837a5ef07d10d8a226f5bc358cc8805",
-            "reference": "681b62348837a5ef07d10d8a226f5bc358cc8805",
+            "url": "https://files.phpcomposer.com/files/Codeception/Stub/b2eff325d8ff0b824ff659048be7be4e5767d7d0.zip",
+            "reference": "b2eff325d8ff0b824ff659048be7be4e5767d7d0",
             "shasum": ""
         },
         "require": {
@@ -436,7 +436,7 @@
         "require-dev": {
             "phpunit/phpunit": ">=4.8 <8.0"
         },
-        "time": "2018-05-17T09:31:08+00:00",
+        "time": "2018-05-18T14:33:08+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -986,29 +986,79 @@
         ]
     },
     {
-        "name": "myclabs/deep-copy",
-        "version": "1.7.0",
-        "version_normalized": "1.7.0.0",
+        "name": "moonlandsoft/yii2-phpexcel",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/myclabs/DeepCopy.git",
-            "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e"
+            "url": "https://github.com/moonlandsoft/yii2-phpexcel.git",
+            "reference": "9408d09abc7ff4828302dafd5ffb709314f14589"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
-            "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
+            "url": "https://files.phpcomposer.com/files/moonlandsoft/yii2-phpexcel/9408d09abc7ff4828302dafd5ffb709314f14589.zip",
+            "reference": "9408d09abc7ff4828302dafd5ffb709314f14589",
             "shasum": ""
         },
         "require": {
-            "php": "^5.6 || ^7.0"
+            "phpoffice/phpexcel": "*",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2015-09-06T07:50:33+00:00",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "moonland\\phpexcel\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Moh Khoirul Anam",
+                "email": "moh.khoirul.anaam@gmail.com"
+            }
+        ],
+        "description": "Exporting PHP to Excel or Importing Excel to PHP",
+        "keywords": [
+            "excel",
+            "export",
+            "extension",
+            "import",
+            "xls",
+            "yii2"
+        ]
+    },
+    {
+        "name": "myclabs/deep-copy",
+        "version": "1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/myclabs/DeepCopy.git",
+            "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/myclabs/DeepCopy/478465659fd987669df0bd8a9bf22a8710e5f1b6.zip",
+            "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1"
+        },
+        "replace": {
+            "myclabs/deep-copy": "self.version"
         },
         "require-dev": {
             "doctrine/collections": "^1.0",
             "doctrine/common": "^2.6",
-            "phpunit/phpunit": "^4.1"
+            "phpunit/phpunit": "^7.1"
         },
-        "time": "2017-10-19T19:58:43+00:00",
+        "time": "2018-05-29T17:25:09+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1297,6 +1347,66 @@
         ]
     },
     {
+        "name": "phpoffice/phpexcel",
+        "version": "1.8.1",
+        "version_normalized": "1.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPOffice/PHPExcel.git",
+            "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/PHPOffice/PHPExcel/372c7cbb695a6f6f1e62649381aeaa37e7e70b32.zip",
+            "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
+            "shasum": ""
+        },
+        "require": {
+            "ext-xml": "*",
+            "ext-xmlwriter": "*",
+            "php": ">=5.2.0"
+        },
+        "time": "2015-05-01T07:00:55+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "PHPExcel": "Classes/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Maarten Balliauw",
+                "homepage": "http://blog.maartenballiauw.be"
+            },
+            {
+                "name": "Mark Baker"
+            },
+            {
+                "name": "Franck Lefevre",
+                "homepage": "http://blog.rootslabs.net"
+            },
+            {
+                "name": "Erik Tilt"
+            }
+        ],
+        "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+        "homepage": "http://phpexcel.codeplex.com",
+        "keywords": [
+            "OpenXML",
+            "excel",
+            "php",
+            "spreadsheet",
+            "xls",
+            "xlsx"
+        ],
+        "abandoned": "phpoffice/phpspreadsheet"
+    },
+    {
         "name": "phpspec/php-diff",
         "version": "v1.1.0",
         "version_normalized": "1.1.0.0",
@@ -1403,17 +1513,17 @@
     },
     {
         "name": "phpunit/php-code-coverage",
-        "version": "6.0.4",
-        "version_normalized": "6.0.4.0",
+        "version": "6.0.5",
+        "version_normalized": "6.0.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-            "reference": "52187754b0eed0b8159f62a6fa30073327e8c2ca"
+            "reference": "4cab20a326d14de7575a8e235c70d879b569a57a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/52187754b0eed0b8159f62a6fa30073327e8c2ca",
-            "reference": "52187754b0eed0b8159f62a6fa30073327e8c2ca",
+            "url": "https://files.phpcomposer.com/files/sebastianbergmann/php-code-coverage/4cab20a326d14de7575a8e235c70d879b569a57a.zip",
+            "reference": "4cab20a326d14de7575a8e235c70d879b569a57a",
             "shasum": ""
         },
         "require": {
@@ -1434,7 +1544,7 @@
         "suggest": {
             "ext-xdebug": "^2.6.0"
         },
-        "time": "2018-04-29T14:59:09+00:00",
+        "time": "2018-05-28T11:49:20+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1744,17 +1854,17 @@
     },
     {
         "name": "phpunit/phpunit-mock-objects",
-        "version": "6.1.1",
-        "version_normalized": "6.1.1.0",
+        "version": "6.1.2",
+        "version_normalized": "6.1.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-            "reference": "70c740bde8fd9ea9ea295be1cd875dd7b267e157"
+            "reference": "f9756fd4f43f014cb2dca98deeaaa8ce5500a36e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/70c740bde8fd9ea9ea295be1cd875dd7b267e157",
-            "reference": "70c740bde8fd9ea9ea295be1cd875dd7b267e157",
+            "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit-mock-objects/f9756fd4f43f014cb2dca98deeaaa8ce5500a36e.zip",
+            "reference": "f9756fd4f43f014cb2dca98deeaaa8ce5500a36e",
             "shasum": ""
         },
         "require": {
@@ -1769,7 +1879,7 @@
         "suggest": {
             "ext-soap": "*"
         },
-        "time": "2018-04-11T04:50:36+00:00",
+        "time": "2018-05-29T13:54:20+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2496,17 +2606,17 @@
     },
     {
         "name": "symfony/browser-kit",
-        "version": "v4.0.10",
-        "version_normalized": "4.0.10.0",
+        "version": "v4.1.0",
+        "version_normalized": "4.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/browser-kit.git",
-            "reference": "c43bfa0182363b3fd64331b5e64e467349ff4670"
+            "reference": "16355a5d0f1499c77efee5ff68d8ea61624d4da1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/c43bfa0182363b3fd64331b5e64e467349ff4670",
-            "reference": "c43bfa0182363b3fd64331b5e64e467349ff4670",
+            "url": "https://files.phpcomposer.com/files/symfony/browser-kit/16355a5d0f1499c77efee5ff68d8ea61624d4da1.zip",
+            "reference": "16355a5d0f1499c77efee5ff68d8ea61624d4da1",
             "shasum": ""
         },
         "require": {
@@ -2520,11 +2630,11 @@
         "suggest": {
             "symfony/process": ""
         },
-        "time": "2018-03-19T22:35:49+00:00",
+        "time": "2018-04-06T10:52:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.0-dev"
+                "dev-master": "4.1-dev"
             }
         },
         "installation-source": "dist",
@@ -2555,17 +2665,17 @@
     },
     {
         "name": "symfony/console",
-        "version": "v4.0.10",
-        "version_normalized": "4.0.10.0",
+        "version": "v4.1.0",
+        "version_normalized": "4.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/console.git",
-            "reference": "058f120b8e06ebcd7b211de5ffae07b2db00fbdd"
+            "reference": "2d5d973bf9933d46802b01010bd25c800c87c242"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/058f120b8e06ebcd7b211de5ffae07b2db00fbdd",
-            "reference": "058f120b8e06ebcd7b211de5ffae07b2db00fbdd",
+            "url": "https://files.phpcomposer.com/files/symfony/console/2d5d973bf9933d46802b01010bd25c800c87c242.zip",
+            "reference": "2d5d973bf9933d46802b01010bd25c800c87c242",
             "shasum": ""
         },
         "require": {
@@ -2590,11 +2700,11 @@
             "symfony/lock": "",
             "symfony/process": ""
         },
-        "time": "2018-05-16T09:05:32+00:00",
+        "time": "2018-05-30T07:26:09+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.0-dev"
+                "dev-master": "4.1-dev"
             }
         },
         "installation-source": "dist",
@@ -2625,27 +2735,27 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v4.0.10",
-        "version_normalized": "4.0.10.0",
+        "version": "v4.1.0",
+        "version_normalized": "4.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
-            "reference": "0383a1a4eb1ffcac28719975d3e01bfa14be8ab3"
+            "reference": "03ac71606ecb0b0ce792faa17d74cc32c2949ef4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/0383a1a4eb1ffcac28719975d3e01bfa14be8ab3",
-            "reference": "0383a1a4eb1ffcac28719975d3e01bfa14be8ab3",
+            "url": "https://files.phpcomposer.com/files/symfony/css-selector/03ac71606ecb0b0ce792faa17d74cc32c2949ef4.zip",
+            "reference": "03ac71606ecb0b0ce792faa17d74cc32c2949ef4",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3"
         },
-        "time": "2018-05-11T15:58:37+00:00",
+        "time": "2018-05-30T07:26:09+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.0-dev"
+                "dev-master": "4.1-dev"
             }
         },
         "installation-source": "dist",
@@ -2680,17 +2790,17 @@
     },
     {
         "name": "symfony/dom-crawler",
-        "version": "v4.0.10",
-        "version_normalized": "4.0.10.0",
+        "version": "v4.1.0",
+        "version_normalized": "4.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/dom-crawler.git",
-            "reference": "cf13fe774cabf4d32e8e234ec6efe7821e8b6ec1"
+            "reference": "3350cacf151b48d903114ab8f7a4ccb23e07e10a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/cf13fe774cabf4d32e8e234ec6efe7821e8b6ec1",
-            "reference": "cf13fe774cabf4d32e8e234ec6efe7821e8b6ec1",
+            "url": "https://files.phpcomposer.com/files/symfony/dom-crawler/3350cacf151b48d903114ab8f7a4ccb23e07e10a.zip",
+            "reference": "3350cacf151b48d903114ab8f7a4ccb23e07e10a",
             "shasum": ""
         },
         "require": {
@@ -2704,11 +2814,11 @@
         "suggest": {
             "symfony/css-selector": ""
         },
-        "time": "2018-05-01T23:00:51+00:00",
+        "time": "2018-05-01T23:02:13+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.0-dev"
+                "dev-master": "4.1-dev"
             }
         },
         "installation-source": "dist",
@@ -2739,17 +2849,17 @@
     },
     {
         "name": "symfony/event-dispatcher",
-        "version": "v4.0.10",
-        "version_normalized": "4.0.10.0",
+        "version": "v4.1.0",
+        "version_normalized": "4.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/event-dispatcher.git",
-            "reference": "63353a71073faf08f62caab4e6889b06a787f07b"
+            "reference": "2391ed210a239868e7256eb6921b1bd83f3087b5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/63353a71073faf08f62caab4e6889b06a787f07b",
-            "reference": "63353a71073faf08f62caab4e6889b06a787f07b",
+            "url": "https://files.phpcomposer.com/files/symfony/event-dispatcher/2391ed210a239868e7256eb6921b1bd83f3087b5.zip",
+            "reference": "2391ed210a239868e7256eb6921b1bd83f3087b5",
             "shasum": ""
         },
         "require": {
@@ -2769,11 +2879,11 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2018-04-06T07:35:43+00:00",
+        "time": "2018-04-06T07:35:57+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.0-dev"
+                "dev-master": "4.1-dev"
             }
         },
         "installation-source": "dist",
@@ -2804,27 +2914,27 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v4.0.10",
-        "version_normalized": "4.0.10.0",
+        "version": "v4.1.0",
+        "version_normalized": "4.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
-            "reference": "8c633f5a815903a1fe6e3fc135f207267a8a79af"
+            "reference": "087e2ee0d74464a4c6baac4e90417db7477dc238"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/finder/zipball/8c633f5a815903a1fe6e3fc135f207267a8a79af",
-            "reference": "8c633f5a815903a1fe6e3fc135f207267a8a79af",
+            "url": "https://files.phpcomposer.com/files/symfony/finder/087e2ee0d74464a4c6baac4e90417db7477dc238.zip",
+            "reference": "087e2ee0d74464a4c6baac4e90417db7477dc238",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3"
         },
-        "time": "2018-05-16T09:05:32+00:00",
+        "time": "2018-05-16T14:33:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.0-dev"
+                "dev-master": "4.1-dev"
             }
         },
         "installation-source": "dist",
@@ -2973,17 +3083,17 @@
     },
     {
         "name": "symfony/yaml",
-        "version": "v4.0.10",
-        "version_normalized": "4.0.10.0",
+        "version": "v4.1.0",
+        "version_normalized": "4.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
-            "reference": "048b1be5fb96e73ff1d065f5e7e23f84415ac907"
+            "reference": "80e4bfa9685fc4a09acc4a857ec16974a9cd944e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/yaml/zipball/048b1be5fb96e73ff1d065f5e7e23f84415ac907",
-            "reference": "048b1be5fb96e73ff1d065f5e7e23f84415ac907",
+            "url": "https://files.phpcomposer.com/files/symfony/yaml/80e4bfa9685fc4a09acc4a857ec16974a9cd944e.zip",
+            "reference": "80e4bfa9685fc4a09acc4a857ec16974a9cd944e",
             "shasum": ""
         },
         "require": {
@@ -2999,11 +3109,11 @@
         "suggest": {
             "symfony/console": "For validating YAML files using the lint command"
         },
-        "time": "2018-05-07T07:12:24+00:00",
+        "time": "2018-05-30T07:26:09+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.0-dev"
+                "dev-master": "4.1-dev"
             }
         },
         "installation-source": "dist",
@@ -3496,6 +3606,59 @@
         "keywords": [
             "code generator",
             "gii",
+            "yii2"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-redis",
+        "version": "2.0.8",
+        "version_normalized": "2.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-redis.git",
+            "reference": "ffe6bff8dc6be4bb84c9495cd3ef7ef1161c1314"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/yiisoft/yii2-redis/ffe6bff8dc6be4bb84c9495cd3ef7ef1161c1314.zip",
+            "reference": "ffe6bff8dc6be4bb84c9495cd3ef7ef1161c1314",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "~2.0.14"
+        },
+        "require-dev": {
+            "yiisoft/yii2-dev": "~2.0.14"
+        },
+        "time": "2018-03-20T11:01:04+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\redis\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc"
+            }
+        ],
+        "description": "Redis Cache, Session and ActiveRecord for the Yii framework",
+        "keywords": [
+            "active-record",
+            "cache",
+            "redis",
+            "session",
             "yii2"
         ]
     },

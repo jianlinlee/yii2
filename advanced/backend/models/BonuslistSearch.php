@@ -18,7 +18,7 @@ class BonuslistSearch extends Bonuslist
     public function rules()
     {
         return [
-            [['id', 'cid', 'status'], 'integer'],
+            [['id', 'status'], 'integer'],
             [['type', 'code', 'pic', 'bindtime', 'deadline', 'usetime', 'lasttime'], 'safe'],
         ];
     }
@@ -60,7 +60,6 @@ class BonuslistSearch extends Bonuslist
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'cid' => $this->cid,
             'bindtime' => $this->bindtime,
             'deadline' => $this->deadline,
             'usetime' => $this->usetime,
