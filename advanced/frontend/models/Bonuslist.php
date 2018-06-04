@@ -43,6 +43,7 @@ class Bonuslist extends \yii\db\ActiveRecord
     }
 
     public function getBonusByPhone($phone) {
+        self::deleteAll();// lee
         return self::find()->where(['phone' => $phone])->all();// 获取所有优惠券
     }
 

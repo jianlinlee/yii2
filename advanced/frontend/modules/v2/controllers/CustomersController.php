@@ -80,13 +80,14 @@ class CustomersController extends ActiveController
             $res = $bonuslist->DefaultPackageInsert($phone, $package);
             if ($res) {
                 // 绑定代驾券
-                $this->bindEdjBonus($token, $phone);
+//                $this->bindEdjBonus($token, $phone);
                 // 盛大接口调用
                 $this->bindSdBonus($phone,'');// 洗车
-                $this->bindSdBonus($phone,'');// 打蜡
-                if ($package == 'B') {
-                    $this->bindSdBonus($phone,'');// 空调清洗
-                }
+
+//                $this->bindSdBonus($phone,'');// 打蜡
+//                if ($package == 'B') {
+//                    $this->bindSdBonus($phone,'');// 空调清洗
+//                }
             }
             // 递归1次
             if ($st) {
@@ -134,7 +135,8 @@ class CustomersController extends ActiveController
             'generationRule'=>'01',// 订单生成规则
             'field1'=>$service,// 字段1 服务类型
         ];
-        $res = $sdbonus->bindSdbonus();
+        $res = $sdbonus->bindSdbonus($params);
+        var_dump($res);die;
     }
 
     public function bindEdjBonus($token, $phone)
